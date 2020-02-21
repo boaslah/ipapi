@@ -1,0 +1,7 @@
+1. Create a directory with the name "quiz_project"
+2. Implement the following in that directory using only HTML, CSS and JavaScript:
+a. Use the JSON document that was sent to you and create a quiz application.
+b. The app should show random questions and the options for each question.
+c. User should be able to select an option as their answer
+d. The app should tell the user whether their answer was correct or wrong
+e. The app should show the user final score after the quiz is completed

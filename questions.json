@@ -1,0 +1,154 @@
+{
+    "questions": [
+        {
+            "question": "Who was born in Bethlehem and became a prophet?",
+            "category": "History",
+            "answer": "Jesus",
+            "answers": [
+                "ceaser",
+                "John the baptist",
+                "Jesus"
+            ]
+        },
+        {
+            "question": "What was Gandhi's first name?",
+            "category": "History",
+            "answer": "Mohandas",
+            "answers": [
+                "Mohammed",
+                "Mohandas",
+                "Muhammad"
+            ]
+        },
+        {
+            "question": "What year was JFK assassinated?",
+            "category": "History",
+            "answer": "1965",
+            "answers": [
+                "1964",
+                "1965",
+                "1966",
+                "1963"
+            ]
+        },
+        {
+            "question": "Who was Julius Caesar's grand-nephew?",
+            "category": "History",
+            "answer": "Augustus",
+            "answers": [
+                "Marc Anthony",
+                "Flavius",
+                "Augustus"
+            ]
+        },
+        {
+            "question": "What was Albert Einstein famous for?",
+            "category": "History",
+            "answer": "",
+            "answers": [
+                "Inventions",
+                "Religious leader",
+                "Theorist"
+            ]
+        },
+        {
+            "question": "Which is greater than 4",
+            "category": "Math",
+            "answer": "5",
+            "answers": [
+                "5",
+                "-5",
+                "-1/2",
+                "-25"
+            ]
+        },
+        {
+            "question": "Who was the author of the famous storybook 'Alice's Adventures in Wonderland'?",
+            "category": "Literature",
+            "answer": "Lewis Carroll",
+            "answers": [
+                "Rudyard Kipling",
+                "John Keats",
+                "Lewis Carroll",
+                "H G Wells"
+            ]
+        },
+        {
+            "question": "Who wrote the famous 1855 poem 'The Charge of the Light Brigade'?",
+            "category": "",
+            "answer": "Lord Alfred Tennyson",
+            "answers": [
+                "Lord Alfred Tennyson",
+                "Christopher Marlowe",
+                "Johannes Gutenberg",
+                "René Descartes"
+            ]
+        },
+        {
+            "question": "Who wrote 'Where ignorance is bliss, it is folly to be wise'?",
+            "category": "",
+            "answer": "Shakespeare",
+            "answers": [
+                " Browning",
+                "Marx",
+                "Shakespeare",
+                "Kipling"
+            ]
+        },
+        {
+            "question": "Combine terms: 12a + 26b -4b – 16a.",
+            "category": "Math",
+            "answer": " -4a + 22b",
+            "answers": [
+                " -4a + 22b",
+                "4a + 22b",
+                "28a + 30b",
+                "-28a + 30b"
+            ]
+        },
+        {
+            "question": " Which is the smallest?",
+            "category": "Math",
+            "answer": "-1",
+            "answers": [
+                "-1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "question": "A card is selected at random from a standard 52 card deck. Assuming all cards are equally likely to be selected, what is the probability that a red card was selected given that a king was selected?",
+            "category": "",
+            "answer": "1/2",
+            "answers": [
+                "1/26",
+                "1/4",
+                "1/2",
+                "1/13"
+            ]
+        },
+        {
+            "question": "A card is selected at random from a standard 52 card deck. Assuming all cards are equally likely to be selected, what is the probability that a red card or a king was selected?",
+            "category": "Math",
+            "answer": "7/13",
+            "answers": [
+                "15/26",
+                "17/26",
+                "7/13",
+                "1/2"
+            ]
+        },
+        {
+            "question": "A card is selected at random from a standard 52 card deck. Assuming all cards are equally likely to be selected, what is the probability that a red king was selected?",
+            "category": "Math",
+            "answer": "1/26",
+            "answers": [
+                "1/26",
+                "1/52",
+                "1/13",
+                "15/26"
+            ]
+        }
+    ]
+}
