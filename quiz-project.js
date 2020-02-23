@@ -194,10 +194,17 @@ const getNewQuestion = () => {
     }
 }
 
+score_view.addEventListener("click", function() {
+    location.reload();
+    welcome_view.style.display = "none";
+    question_option_view.style.display = "block";
+})
+
 const getNewQuiz = () => {
-    score_count = 0;
     counter = 0;
+    score_count = 0;
     getNewQuestion();
+    console.log(score_count);
 }
 
 // display welcome view
@@ -272,6 +279,10 @@ const calculateScore = () => {
     else if(score_count  === 5)
     {
         score = 100;
+    }
+    else if(score_count === 0)
+    {
+        score = 0;
     }
 }
 
