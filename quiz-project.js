@@ -5,6 +5,7 @@ var score = 0;
 var user_selected_option;
 var counter = 0;
 
+
 //get elements from the dom
 var question_body = document.getElementById("question");
 var option_body = document.getElementById("options");
@@ -171,15 +172,16 @@ var questions = {
 
 //get new question function
 const getNewQuestion = () => {
+    var random_num = Math.floor(Math.random() * 14);
     result.innerHTML = "";
     result.style.backgroundColor = "white";
-    ans = questions.questions[counter].answer;
-    question_body.innerHTML = counter+1 + ".     "+ questions.questions[counter].question;
+    ans = questions.questions[random_num].answer;
+    question_body.innerHTML = counter+1 + ".     "+ questions.questions[random_num].question;
     option_body.innerHTML = `
         <ul>
-            A<li><a href="#"  class = "list" id="a">${questions.questions[counter].answers[0]}</a></li>
-            B<li><a href="#"  class = "list" id="b">${questions.questions[counter].answers[1]}</a></li>
-            C<li><a href="#"  class = "list" id="c">${questions.questions[counter].answers[2]}</a></li>
+            A<li><a href="#"  class = "list" id="a">${questions.questions[random_num].answers[0]}</a></li>
+            B<li><a href="#"  class = "list" id="b">${questions.questions[random_num].answers[1]}</a></li>
+            C<li><a href="#"  class = "list" id="c">${questions.questions[random_num].answers[2]}</a></li>
         </ul>
     `
     counter ++;
@@ -192,11 +194,23 @@ const getNewQuestion = () => {
     }
 }
 
+const getNewQuiz = () => {
+    score_count = 0;
+    counter = 0;
+    getNewQuestion();
+}
+
 // display welcome view
 document.getElementById("welcome-view-button").addEventListener('click', function(){
     welcome_view.style.display = "none";
     question_option_view.style.display = "block";
 })
+
+const goHome = () => {
+    welcome_view.style.display = "block";
+    question_option_view.style.display = "none";
+    score_view.style.display = "none";
+}
 
 // display question and answer view
 document.getElementById("quiz-view-button").addEventListener('click', function(){
@@ -214,13 +228,12 @@ document.getElementById("score-view-button").addEventListener('click', function(
     
 })
 
-// add event listener to the li elements
+// add event listener to the the dom
 document.addEventListener('click', function(event){
     if(event.target.className === "list"){
         user_selected_option = event.target.textContent;
-        checkUserOption();
-        console.log(event.target);
-    } 
+        checkUserOption(); 
+    }
 })
 
 //check if user option is correct
@@ -238,8 +251,10 @@ const checkUserOption = () => {
         result.innerHTML = "Worng";
     }
 }
+
+
 const calculateScore = () => {
-    if(score_count  === 1){
+    if(score_count  === 1){  
         score = 20;
     }
     else if(score_count  === 2)

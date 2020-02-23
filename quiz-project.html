@@ -2,21 +2,22 @@
     <head>
         <title>Quiz App</title>
         <link rel="stylesheet" href="quiz-project.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <a href="#" class="list-group-item" ><i class="fa fa-home fa-fw fa-5x" style="color: white;"onclick="goHome()" ></i></a>
         <!-- welcome view -->
         <div class="quiz-container" id="welcome-view">
             <h1 id= "Welcome">Welcome To Boaslah's <br>Quiz App</h1>
             <div id="welcome-view">
-                <h3>  
+                <h3 id="welcome-message">  
                     Here you'll be given five(5)  questions for each try and will have  options 
-                    to select the correct answer only, if your answer is wrong I  you and
-                    show you the correct answer. 
+                    to select the correct answer only.
                 </h3>
                 <h4> 
                     To get started click the new quiz button and let's get this moving!!
                 </h4>
-                <button id="welcome-view-button" onclick="getNewQuestion()">New Quiz</button>
+                <button id="welcome-view-button" onclick="getNewQuiz()">New Quiz</button>
             </div>
         </div>
 
@@ -36,7 +37,7 @@
             <div id="welcome-view">
                 <h3 id="user-score">  
                 </h3>
-                <button id="score-view-button" onclick="getNewQuestion()">New Quiz</button>
+                <button id="score-view-button" onclick="getNewQuiz()">New Quiz</button>
             </div>
         </div>
         <script src="quiz-project.js"></script>

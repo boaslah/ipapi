@@ -5,8 +5,8 @@
     margin-left: 300px;
     margin-right: 300px;
     padding: 100px;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     border-radius: 5px;
 }
 button{
@@ -67,5 +67,8 @@ h1#welcome{
     font-family: serif;
 }
 h4{
+    text-align: center;
+}
+h3#welcome-message{
     text-align: center;
 }
